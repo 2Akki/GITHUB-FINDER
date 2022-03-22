@@ -16,7 +16,7 @@ export default function UserSearch() {
     const {dispatch,users} = useContext(GithubContext)
     useContext(AlertContext)
     const {setAlert} =useContext(AlertContext)
-    const [state] =useReducer(githubReducer,initialState)
+    // const [state] =useReducer(githubReducer,initialState)
     const HandleSubmit = async(e)=>{
         e.preventDefault()
         if(text===""){

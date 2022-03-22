@@ -20,7 +20,7 @@ export default function User() {
       dispatch({type:"GET_REPOS",payload:userRepoData})
     }
     getUserData()
-  }, []);
+  }, [dispatch,params.login]);
   const websiteUrl = blog?.startsWith('http') ? blog : 'https://' + blog
   return <Fragment>
       <div className='w-full mx-auto lg:w-10/12'>
